@@ -4,8 +4,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
     <description>My ruleset</description>
-    <rule ref="./pmd/my-bestpractices.xml" />
-    <rule ref="./pmd/my-errorprone.xml" />
-    <rule ref="./pmd/my-multithreading.xml" />
-    <rule ref="./pmd/my-performance.xml" />
+    <rule ref="category/java/bestpractices.xml">
+        <exclude name="AbstractClassWithoutAbstractMethod"/>
+        <exclude name="JUnitTestContainsTooManyAsserts"/>
+        <exclude name="JUnitTestsShouldIncludeAssert"/>
+    </rule>
+    <rule ref="category/java/errorprone.xml">
+        <exclude name="AvoidDuplicateLiterals"/>
+        <exclude name="BeanMembersShouldSerialize"/>
+        <exclude name="DataflowAnomalyAnalysis"/>
+        <exclude name="DoNotCallSystemExit"/>
+        <exclude name="DoNotCallSystemExit"/>
+        <exclude name="InvalidSlf4jMessageFormat"/>
+    </rule>
+    <rule ref="category/java/multithreading.xml">
+        <exclude name="AvoidDuplicateLiterals"/>
+        <exclude name="BeanMembersShouldSerialize"/>
+        <exclude name="DataflowAnomalyAnalysis"/>
+        <exclude name="DoNotCallSystemExit"/>
+        <exclude name="DoNotCallSystemExit"/>
+        <exclude name="InvalidSlf4jMessageFormat"/>
+    </rule>
+    <rule ref="category/java/performance.xml" />
 </ruleset>
