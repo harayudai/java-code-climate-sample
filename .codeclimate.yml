@@ -3,4 +3,8 @@ plugins:
   pmd:
     enabled: true
     config:
-      file: my-ruleset.xml
+      file:
+        - my-bestpractices.xml
+        - my-errorprone.xml
+        - my-multithreading.xml
+        - my-performance.xml
