@@ -3,4 +3,8 @@ plugins:
   pmd:
     enabled: true
     config:
-      file: my-ruleset.xml
+      file: "my-ruleset.xml"
+  checkstyle:
+    enabled: true
+    config:
+      file: "google_checks.xml"
